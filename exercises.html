@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LINE Exercises</title>
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><nav class="bar" aria-label="Pages">
+<a class="brand" href="index.html"><img src="logo.jpg" alt="" width="28" height="28">LINE</a>
+<a href="index.html">Home</a>
+<a href="exercises.html" aria-current="page">Exercises</a>
+<a href="calendar.html">Calendar</a>
+<a href="habits.html">Habits</a>
+</nav></div></header>
+
+<main class="wrap" data-page="exercises">
+  <section class="sec">
+    <p class="eyebrow">Exercises</p>
+    <h1>Find the right exercise</h1>
+    <p class="lead">Every exercise shows the body part it trains and the best time to do it. Use the filters to shorten the list.</p>
+    <div class="chips" id="tchips" role="group" aria-label="Exercise type"></div>
+    <div class="filters"><label for="bsel">Body part</label><select id="bsel"></select><span id="ecount" aria-live="polite"></span></div>
+    <div class="grid" id="exlist"></div>
+  </section>
+
+  <section class="sec">
+    <p class="eyebrow">Good to know</p>
+    <h2>Before you start</h2>
+    <div class="grid">
+      <div class="card"><h3>How much to move</h3><p>Teenagers should move at least 60 minutes every day (WHO advice). Most of it should be cardio. Add muscle and bone exercises on at least 3 days a week.</p></div>
+      <div class="card"><h3>Possible risks</h3><ul><li>Skipping the warm-up</li><li>Doing too much too soon</li><li>Not drinking enough water</li></ul><p>Start slowly. Stop if something hurts.</p></div>
+      <div class="card"><h3>Equipment</h3><p>Comfortable trainers, a water bottle and a mat. A skipping rope, a ball and a backpack are optional. Many exercises need nothing at all.</p></div>
+    </div>
+  </section>
+  <p class="foot">LINE is a school project about a healthy lifestyle. If you have a health problem, ask a doctor before you start a new exercise plan.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LINE Habits</title>
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><nav class="bar" aria-label="Pages">
+<a class="brand" href="index.html"><img src="logo.jpg" alt="" width="28" height="28">LINE</a>
+<a href="index.html">Home</a>
+<a href="exercises.html">Exercises</a>
+<a href="calendar.html">Calendar</a>
+<a href="habits.html" aria-current="page">Habits</a>
+</nav></div></header>
+
+<main class="wrap" data-page="habits">
+  <section class="sec">
+    <p class="eyebrow">Habits</p>
+    <h1>Your healthy habits today</h1>
+    <p class="lead">Drink water, eat well and sleep well. Your score starts again every morning.</p>
+    <div class="card score">
+      <p class="num"><b id="sc">0</b> <span>of 14 points today</span></p>
+      <div class="rail" aria-hidden="true"><i id="sfill"></i></div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h2 style="font-size:24px">Water</h2>
+        <p>Goal: 8 glasses a day. Tap a number when you finish a glass.</p>
+        <div class="glasses" id="gl"></div>
+        <p id="wl" aria-live="polite"></p>
+      </div>
+      <div class="card eat">
+        <h2 style="font-size:24px">Healthy eating</h2>
+        <p>Tick what you did today.</p>
+        <div id="eat"></div>
+      </div>
+      <div class="card sleep">
+        <h2 style="font-size:24px">Sleep</h2>
+        <p>Goal: 8 to 10 hours a night.</p>
+        <label class="t" for="bed">I went to bed at <input type="time" id="bed"></label>
+        <label class="t" for="wake">I woke up at <input type="time" id="wake"></label>
+        <p class="sres" id="sres" aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec">
+    <p class="eyebrow">Simple advice</p>
+    <h2>10 tips for a healthy life</h2>
+    <ul class="tips">
+      <li><span class="eyebrow">Eating</span><p>Eat fruit or vegetables with every meal.</p></li>
+      <li><span class="eyebrow">Eating</span><p>Start the day with breakfast. Eggs, oats or yoghurt give you energy for school.</p></li>
+      <li><span class="eyebrow">Eating</span><p>Keep sweets and fizzy drinks for treats. Choose water most days.</p></li>
+      <li><span class="eyebrow">Water</span><p>Drink 6 to 8 glasses a day. Drink more when you train.</p></li>
+      <li><span class="eyebrow">Sleep</span><p>Sleep 8 to 10 hours. Go to bed and wake up at the same time every day.</p></li>
+      <li><span class="eyebrow">Sleep</span><p>Put your phone away one hour before bed.</p></li>
+      <li><span class="eyebrow">Screen time</span><p>Keep free-time screens to about 2 hours a day. When you study, stand up and move every 30 minutes.</p></li>
+      <li><span class="eyebrow">Stress</span><p>Try slow breathing, a walk outside, or talk to someone you trust.</p></li>
+      <li><span class="eyebrow">Motivation</span><p>Set small goals. "Run for 10 minutes" is easier than "get fit".</p></li>
+      <li><span class="eyebrow">Motivation</span><p>Exercise with friends and celebrate every finished week.</p></li>
+    </ul>
+  </section>
+  <p class="foot">LINE is a school project about a healthy lifestyle. Your habits are saved only on this device.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

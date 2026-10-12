@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LINE Calendar</title>
+<link rel="icon" href="logo.jpg">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Figtree:wght@400;600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top"><div class="wrap"><nav class="bar" aria-label="Pages">
+<a class="brand" href="index.html"><img src="logo.jpg" alt="" width="28" height="28">LINE</a>
+<a href="index.html">Home</a>
+<a href="exercises.html">Exercises</a>
+<a href="calendar.html" aria-current="page">Calendar</a>
+<a href="habits.html">Habits</a>
+</nav></div></header>
+
+<main class="wrap" data-page="calendar">
+  <section class="sec">
+    <p class="eyebrow">4-week calendar</p>
+    <h1>Build your 4 weeks</h1>
+    <p class="lead">Choose a training type and the calendar fills with its workouts. Want your own plan? Choose Free training.</p>
+    <div class="chips" id="types" role="group" aria-label="Training type"></div>
+    <p class="note" id="tnote" aria-live="polite"></p>
+  </section>
+
+  <section class="sec">
+    <div class="cal-head"><h2>Your calendar</h2><p id="ccount"></p></div>
+    <div class="cal-top">
+      <div class="ov" id="ov" role="group" aria-label="All 28 days"></div>
+      <p class="legend">Green square: day done. Dashed square: rest day. Tap a square to open that week.</p>
+    </div>
+    <div class="chips" id="wtabs" role="group" aria-label="Week"></div>
+    <ol class="days" id="days"></ol>
+  </section>
+
+  <section class="sec">
+    <p class="eyebrow">Every workout</p>
+    <h2>Warm up, cool down, rest</h2>
+    <div class="grid">
+      <div class="card"><h3>Warm-up (5 min)</h3><ul><li>March on the spot, 2 minutes</li><li>Arm circles and leg swings, 1 minute each</li><li>Jumping jacks, 1 minute</li></ul></div>
+      <div class="card"><h3>Cool-down (5 min)</h3><ul><li>Slow walk, 2 minutes</li><li>Stretch legs and shoulders, 20 seconds each</li><li>Five deep breaths</li></ul></div>
+      <div class="card"><h3>Rest days</h3><p>Thursday and Sunday in every plan. Your body gets stronger while it rests. In Free training you choose your own rest days.</p></div>
+      <div class="card"><h3>Weekly goals</h3><ul><li>Week 1: build the habit</li><li>Week 2: build stamina</li><li>Week 3: get stronger</li><li>Week 4: push yourself and celebrate</li></ul></div>
+    </div>
+  </section>
+  <p class="foot">LINE is a school project about a healthy lifestyle. If you have a health problem, ask a doctor before you start a new exercise plan.</p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
